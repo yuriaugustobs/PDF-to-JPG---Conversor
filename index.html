@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Convert your PDF files to JPG images easily with our modern and efficient converter">
+        <meta name="keywords" content="PDF converter, JPG converter, PDF to JPG, image conversion, document conversion">
+        <meta property="og:title" content="PDF to JPG Converter">
+        <meta property="og:description" content="Convert your PDF files to JPG images easily with our modern and efficient converter">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="PDF to JPG Converter">
+        <meta name="twitter:description" content="Convert your PDF files to JPG images easily with our modern and efficient converter">
+        <title>PDF to JPG Converter</title>
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/converter.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- Espaço para anúncios do Google Ads -->
+        <div id="anuncio" class="ad-space glass-effect p-4 my-4 mx-auto mb-4" style="max-width: 600px;">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-XXXXXXXXXXXXXX" <!-- Substitua com seu ID do cliente -->
+                data-ad-slot="XXXXXXXXXX" <!-- Substitua com seu ID do slot -->
+                data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <script type="text/babel" src="components/Header.js"></script>
+        <script type="text/babel" src="components/UploadArea.js"></script>
+        <script type="text/babel" src="components/ConversionStatus.js"></script>
+        <script type="text/babel" src="components/DownloadButton.js"></script>
+        <script type="text/babel" src="utils/pdfConverter.js"></script>
+        <script type="text/babel" src="app.js"></script>
+
+        <footer>
+            <div class="text-center p-4 text-white"> <!-- Alterado de text-gray-800 para text-white -->
+                <p>© 2024, Yuri Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
